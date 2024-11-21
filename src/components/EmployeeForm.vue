@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="employee-form">
       <h2>{{ isEditMode ? "Edit Employee" : "Add New Employee" }}</h2>
       <form @submit.prevent="submitForm">
         <label>
@@ -69,4 +69,44 @@
     },
   };
   </script>
+  
+  <style scoped>
+  .employee-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  .employee-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .employee-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .employee-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .employee-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .employee-form button:hover {
+    background-color: #218838;
+  }
+  </style>
   

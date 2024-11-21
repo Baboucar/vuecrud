@@ -52,3 +52,16 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+#app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px auto;
+  color: #333;
+}
+h1 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+</style>
